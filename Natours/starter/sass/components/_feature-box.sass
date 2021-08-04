@@ -1,0 +1,23 @@
+@use "../abstracts" as *
+
+.feature-box
+	background-color: rgba($color-white, .8)
+	font-size: 1.5rem
+	padding: 2.5rem
+	text-align: center
+	border-radius: 10px
+	box-shadow: 0 1.5rem 4rem rgba($color-black, .15)
+	margin: 0 3rem
+	transition: transform .2s
+	flex: 1 1 0px
+	&__icon
+		font-size: 6rem
+		margin-bottom: .5rem
+		background-image: linear-gradient(to bottom right, $color-primary, $color-primary-dark)
+		background-clip: text
+		-webkit-background-clip: text
+		color: transparent
+
+	&:hover
+		transform: translateY(-.5rem) scale(1.05)
+		box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3)
